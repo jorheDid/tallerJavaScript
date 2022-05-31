@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario javascript</title>
+    <link rel="stylesheet" href="css.css" />
+</head>
+
+<body>
+    <div class="contain">
+        <header id="head">
+            <h1>Formulario Proyectos</h1>
+        </header>
+        <section id="section">
+         
+                <label for="cod">Codigo de Proyecto</label><br>
+                <input type="number" id="code" name="Codigo" value><br>
+                <label for="nombre">Nombre de Proyecto</label><br>
+                <input type="text" id="nombre" name="Nombre" value=""><br>
+                <label for="des">Descripción</label><br>
+                <input type="text" id="descripcion" name="desc" value=""><br>
+                <label for="fecha">fecha de Inicio</label><br>
+                <input type="date" id="fecha" name="date_control" value=""><br>
+                <label>Tipo de Proyecto</label><br>
+                <select name="select" id="tipo">
+                    <option value="Extención">Extención</option>
+                    <option value="Investigacion" >Investigacion</option>
+                  </select><br> <br>
+                <button onclick="agregarNuevo()">Agregar</button>
+            <table id="contenido"></table>
+        </section>
+    </div>
+<script src="main.js"></script>
+
+</script>
+</body>
+
+</html>
